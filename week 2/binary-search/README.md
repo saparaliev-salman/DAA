@@ -4,7 +4,6 @@
 We get an array of numbers that is sorted and a target number. We need to find the target and return the index. If we don't find it, return -1. 
 
 2. Approach
-This time I decided to make it smarter and use O(log n) way like the problem says.
 I make two variables. lef is at the start (0) and righ is at the end (length - 1). Inside a while loop I find the middle number mid. 
 If nums[mid] is exactly my target, I just return mid. 
 If nums[mid] is smaller than target, it means target is in the right half because array is sorted. So I move left to mid + 1. 
